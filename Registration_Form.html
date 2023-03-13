@@ -5,42 +5,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration Form</title>
 </head>
-
-<body>
+<form>
     <h1>Registration Form</h1>
-    First Name:* <input type="text" name="first_name">
-    <div>Last Name:* <input type="text" name="last_name"></div>
-    <div>Email Address:*<input type="test" name="email_address"></div>
-    <div>Password:* <input type="password" name="password"></div>
-    <div>Confirm Password:* <input type="password" name="confirm_password" </div>
-        <div>Birthday:<input type="date" name="dob"></div>
-        <div>Gender Identity:</div>
-        <input type="radio" name="Male" value="Male" id="Male">
+    <label>First Name: *</label>
+    <input type="text" name="first_name" placeholder="First Name">
+    <div>
+    </div>
+        <label>Last Name: *</label>
+        <input type="text" name="last_name" placeholder="Last Name">
+    <div>
+    </div>
+        <label>Email Address: *</label>
+        <input type="text" name="email_address" placeholder="E-mail address">
+    <div>     
+    </div>
+        <label>Password: *</label> 
+        <input type="password" name="password">
+    <div>
+    </div>
+        <label>Confirm Password: *</label> 
+        <input type="password" name="password">
+    <div>
+    </div>
+        <label>Birthday:</label>
+        <input type="date" name="dob">
+    <div>
+    </div>
+        <label>Gender Identity:</label>
+    <div>
+    </div>
+        <input type="radio" name="gender" value="Male" id="Male">
         <label for="Male">Male</label>
-        <input type="radio" name="Femlae" value="Female" id="Female">
+        <input type="radio" name="gender" value="Female" id="Female">
         <label for="Female">Female</label>
-        <input type="radio" name="Non-binary" value="Non-binary" id="Non-binary">
+        <input type="radio" name="gender" value="Non-binary" id="Non-binary">
         <label for="Non-binary">Non-binary</label>
-        <input type="radio" name="I prefer not to answer" value="I prefer not to answer" id="I prefer not to answer">
-        <label for="I prefer not to answer">I prefer not to answer</label>
-        <div>A short description about myself:</div>
-        <div><textarea name="comment" cols="20" rows="3"></textarea></div>
-        <div>Favorite Language: <select name="Favorite Language">
+        <input type="radio" name="gender" value="I_prefer_not_to_answer" id="I_prefer_not_to_answer">
+        <label for="I_prefer_not_to_answer">I prefer not to answer</label>
+    <div>
+    </div>
+        <label>A short description about myself:</label>
+    <div>
+    </div>
+    <textarea name="comment" cols="20" rows="3"></textarea>
+    <div>
+    </div>
+       <label>Favorite Language:</label> 
+        <select name="Favorite Language">
                 <option>Javascript</option>
                 <option>Python</option>
                 <option>C++</option>
                 <option>HTML</option>
-            </select></div>
-        <div><input type="checkbox" name="optin" id="optin">
-            <label for="optin">Yes, I would like to receive periodic email updates</label>
-        </div>
-        <div><input type="submit" value="Create Account">
-            </form>
-        </div>
-        <div>*Indicates a required field</div>
+            </select>
+    <div>
+    </div>
+        <input type="checkbox" 
+        name="optin" 
+        id="optin" checked>
+        <label for="optin"> Yes, I would like to receive periodic email updates</label>
+    <div>
+    </div>
+        <input type="submit" value="Create Account">
+    <div>
+    </div>
+        <label>*Indicates a required field</label>
 
-</body>
+</form>
 
 </html>
